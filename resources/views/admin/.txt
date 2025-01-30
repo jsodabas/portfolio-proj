@@ -1,0 +1,18 @@
+        <div class="row-span-2 align-middle justify-start">
+            <strong>Lists of Admin</strong>
+            <div class="grid grid-cols-2">
+                @foreach ($users as $user)
+                    @if ($user->usertype == 'admin')
+                        <x-users :users="$user"/>
+                    @endif
+                @endforeach
+            </div>
+            <div>
+                <strong>Lists of Users</strong>
+                @foreach ($users as $user)
+                    @if ($user->usertype == 'user')
+                        <x-users :users="$user"/>
+                    @endif
+                @endforeach
+            </div>
+        </div>

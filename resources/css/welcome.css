@@ -1,0 +1,306 @@
+
+.main-banner{
+    height: 348vh;
+    display: grid;
+    grid-template-rows: 80vh 100vh 118vh 50vh;
+}
+
+@media screen and (max-width: 768px) {
+    .main-banner{
+        overflow: hidden;
+        min-width: 100vw;
+        height: 1050vh;
+        display: grid;
+        grid-template-rows: 70vh 190vh 150vh 550vh;
+    }
+
+    .main-banner .hero{
+        padding: 0 3rem;
+    }
+
+    .main-banner .primary-content .content{
+        display: grid;
+        /* background-color: red; */
+    }
+
+    .main-banner .promote{
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-banner .promote .sketchup-skill,
+    .main-banner .promote .webdev-skill{
+        width: 100%;
+    }
+
+    .main-banner .promote .sketchup-skill .img img,
+    .main-banner .promote .sketchup-skill .overlay{
+        width: 100vw;
+    }
+
+    .main-banner .promote .webdev-skill .img img,
+    .main-banner .promote .webdev-skill .overlay{
+        width: 100%;
+    }
+
+    .main-banner .promote .title-field{
+        height: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .main-banner{
+        overflow: hidden;
+        min-width: 100vw;
+        height: 570vh;
+        display: grid;
+        grid-template-rows: 100vh 220vh 200vh 50vh;
+    }
+
+    .main-banner .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-banner .img-hero{
+        order: 1;
+    }
+
+    .main-banner .hero .text-prg{
+        order: 2;
+        padding: 0 3rem;
+    }
+
+    .main-banner .hero .info{
+        width: 100px;
+    }
+
+    .promote .sketchup-skill{
+        display: none;
+    }
+
+    .promote .title-field{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .promote .title-field p{
+        width: 85%;
+    }
+
+    .promote .webdev-skill{
+        display: none;
+        /* position: relative; */
+    }
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.text-prg{
+    width: 27rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero img{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.text-prg h1{
+    padding-bottom: 10px;
+}
+
+.text-prg p{
+    padding-bottom: 20px;
+}
+
+.primary-content{
+    display: grid;
+    grid-template-rows: 1fr 80%;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+    padding: 20px;
+}
+
+.body-content{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 22rem);
+    height: 70%;
+}
+
+.body-content > div{
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  7px 7px 60px #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-content > div img{
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.secondary-content{
+    background-color: aqua;
+}
+
+.responsive-promote{
+    display: none;
+}
+
+.promote{
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+}
+
+.title-field, .webdev-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-field button{
+    color: #000;
+    width: 9rem;
+    height: 2.5rem;
+    border: 2px solid rgb(10, 10, 10);
+}
+
+.title-field button:hover{
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.5s ease;
+    width: 9.5rem;
+    height: 3rem;
+}
+
+.sketchup-skill, .webdev-skill{
+    overflow: hidden;
+}
+
+.sketchup-skill .overlay, .webdev-skill .overlay{
+    width: 475px;
+}
+
+.sketchup-skill .overlay, .webdev-skill .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(235, 235, 235, 0.767);
+    height: 50vh;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sketchup-skill .img{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sketchup-skill img{
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.webdev-skill .img{
+    height: auto;
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.webdev-skill img{
+    height: 50vh;
+    object-fit: cover;
+}
+
+.sketchup-skill .overlay p, .webdev-skill .overlay p{
+    width: 450px;
+    text-align: center;
+}
+
+.sketchup-skill .overlay button::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    transform: scaleX(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2px;
+    background-color: #000000;
+    transform-origin: left;
+}
+
+.sketchup-skill .overlay button:hover::after,
+.webdev-skill .overlay button:hover::after{
+    transform: scaleX(1);
+    transition: 0.3s ease-in-out;
+}
+
+.webdev-skill .overlay button::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    transform: scaleX(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2px;
+    background-color: #000000;
+    transform-origin: right;
+}

@@ -1,0 +1,25 @@
+/* ADMIN SECTION */
+.admin-banner {
+    /* background-color: rgb(194, 194, 194); */
+    height: 100vh;
+    padding: 20px;
+}
+/* ADMIN SECTION */
+
+.user-list{
+    width: 600px;
+    height: 80px;
+    border: 1px solid red;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-action{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}

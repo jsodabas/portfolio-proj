@@ -1,0 +1,176 @@
+/* ABOUT ME */
+section.about{
+    height: 275vh;
+    display: grid;
+    grid-template-rows: 70vh 100vh;
+}
+
+.top-name{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.overlay{
+    width: auto;
+    height: 10rem;
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.overlay .text{
+    font-family: "Kumbh Sans", serif;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align-last: center;
+}
+
+.text > h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+
+.text > p:nth-child(1) {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    color: rgb(0, 6, 65);
+    text-shadow: 1px 1px 10px rgba(83, 64, 255, 0.562);
+}
+
+.text > p:nth-child(3) {
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 1.1px;
+    color: rgb(0, 6, 65);
+    text-shadow: 1px 1px 10px rgba(83, 64, 255, 0.562);
+}
+
+.space-1{
+    background-color: rgba(86, 176, 236, 0.185);
+}
+
+.bottom-section{
+    display: grid;
+    grid-template-columns: 100px 2fr 4fr;
+    /* background-color: rgb(230, 230, 230); */
+}
+
+@media screen and (max-width: 425px) {
+    section.about{
+        height: 700vh;
+        display: grid;
+        grid-template-rows: 50vh 650vh;
+    }
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc-section{
+        min-height: 540vh;
+        height: 10px;
+    }
+
+    .title{
+        width: 90%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .desc{
+        width: 90%;
+        /* background-color: red; */
+    }
+
+    .img-section{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-section img{
+        width: 400px;
+    }
+    .overlay .text{
+        font-family: "Kumbh Sans", serif;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-align-last: center;
+    }
+    .overlay .text h1{
+        font-size: 33px;
+    }
+}
+
+.img-section{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.desc-section{
+    height: 200vh;
+    padding: 0 20px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.button{
+    margin-top: 35px;
+    padding: 5px 13px;
+    font-weight: 500;
+    border: 2px solid rgb(27, 20, 10);
+    cursor: pointer;
+}
+
+.button button{
+    display: flex;
+}
+
+.button .arrow{
+    display: none;
+}
+
+.button:hover .arrow{
+    transition-duration: 1s;
+    display: flex;
+    animation-name: arrowMove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrowMove{
+    from{
+    translate: -40px;
+    }
+    to{
+        translate: 5px;
+    }
+}
+
+.button:hover{
+    transition: 0.1s ease-in-out;
+    color: white;
+    background-color: rgb(27, 20, 10);
+}
+
+/* .arrow{
+    display: none;
+} */
+
+/* ABOUT ME */
